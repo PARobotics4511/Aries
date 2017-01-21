@@ -15,7 +15,7 @@ public class getSonar extends Command {
     public getSonar() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
-    	requires(Robot.sonic);
+    	//requires(Robot.sonic);
     }
     
     
@@ -27,8 +27,8 @@ public class getSonar extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	double newInches = Robot.sonic.getInches();
-    	System.out.println("Distance:" + newInches);
+    	//double newInches = Robot.sonic.getInches();
+    	//System.out.println("Distance:" + newInches);
     }
 
     // Make this return true when this Command no longer needs to run execute()

@@ -14,6 +14,7 @@ import org.usfirst.frc.team4511.robot.commands.Autonomous;
 import org.usfirst.frc.team4511.robot.subsystems.BallKicker;
 import org.usfirst.frc.team4511.robot.subsystems.DriveTrain;
 import org.usfirst.frc.team4511.robot.subsystems.ExampleSubsystem;
+import org.usfirst.frc.team4511.robot.subsystems.Gyroscope;
 import org.usfirst.frc.team4511.robot.subsystems.WebPageBlocked;
 import org.usfirst.frc.team4511.robot.subsystems.Sonar;
 
@@ -29,11 +30,12 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  */
 public class Robot extends IterativeRobot {
 
-	public static final Sonar sonic = new Sonar();
+	//public static final Sonar sonic = new Sonar();
 	public static final BallKicker kickie = new BallKicker();
 	public static OI oi;
 	public static final WebPageBlocked blockie = new WebPageBlocked();
 	public static final DriveTrain drivie = new DriveTrain();
+	public static final Gyroscope gyro = new Gyroscope();
 	
     Command autonomousCommand;
     SendableChooser chooser;
