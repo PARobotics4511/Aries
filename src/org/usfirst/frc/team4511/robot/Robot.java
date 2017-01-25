@@ -15,6 +15,7 @@ import org.usfirst.frc.team4511.robot.subsystems.BallKicker;
 import org.usfirst.frc.team4511.robot.subsystems.DriveTrain;
 import org.usfirst.frc.team4511.robot.subsystems.ExampleSubsystem;
 import org.usfirst.frc.team4511.robot.subsystems.Gyroscope;
+import org.usfirst.frc.team4511.robot.subsystems.Lazer;
 import org.usfirst.frc.team4511.robot.subsystems.WebPageBlocked;
 import org.usfirst.frc.team4511.robot.subsystems.Sonar;
 
@@ -36,6 +37,7 @@ public class Robot extends IterativeRobot {
 	public static final WebPageBlocked blockie = new WebPageBlocked();
 	public static final DriveTrain drivie = new DriveTrain();
 	public static final Gyroscope gyro = new Gyroscope();
+	public static final Lazer lazie = new Lazer();
 	
     Command autonomousCommand;
     SendableChooser chooser;
