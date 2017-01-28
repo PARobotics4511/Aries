@@ -14,7 +14,7 @@ public class Lazer extends Subsystem {
 	AnalogInput ai = new AnalogInput(0);
 	int bits;
 	
-	public void getVoltage(){
+	public double getVoltage(){
 		ai.setOversampleBits(4);
 		bits = ai.getOversampleBits();
 		ai.setAverageBits(2);
@@ -33,7 +33,7 @@ public class Lazer extends Subsystem {
 		AccumulatorResult result = new AccumulatorResult();
 		ai.getAccumulatorOutput(result);
 		count = result.count;
-		value = result.value;
+		return volts;
 	}
 	
 
