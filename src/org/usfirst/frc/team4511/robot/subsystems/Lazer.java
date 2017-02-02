@@ -33,6 +33,8 @@ public class Lazer extends Subsystem {
 		AccumulatorResult result = new AccumulatorResult();
 		ai.getAccumulatorOutput(result);
 		count = result.count;
+		System.out.println("Volts: " + volts);
+		System.out.println("Analog Input: " + ai);
 		return volts;
 	}
 	
