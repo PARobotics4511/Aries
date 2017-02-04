@@ -38,7 +38,7 @@ public class OI {
     // Start the command when the button is pressed and let it run the command
     // until it is finished as determined by it's isFinished method.
     // button.whenPressed(new ExampleCommand());
-		butt1.whenPressed(new GetLazer());
+		butt1.whileHeld(new GetLazer());
 		//butt1.whileHeld(new FullThrottle());
 		//butt1.whenReleased(new Drive());
 		//butt3.whenPressed(new Retract());

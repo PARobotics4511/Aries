@@ -1,24 +1,14 @@
 
 package org.usfirst.frc.team4511.robot;
 
-import edu.wpi.first.wpilibj.Compressor;
 import edu.wpi.first.wpilibj.IterativeRobot;
-import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
-import edu.wpi.first.wpilibj.networktables.NetworkTable;
-
 //import org.opencv.core.Rect;
 import org.usfirst.frc.team4511.robot.commands.Autonomous;
-import org.usfirst.frc.team4511.robot.subsystems.BallKicker;
 import org.usfirst.frc.team4511.robot.subsystems.DriveTrain;
-import org.usfirst.frc.team4511.robot.subsystems.ExampleSubsystem;
-import org.usfirst.frc.team4511.robot.subsystems.Gyroscope;
 import org.usfirst.frc.team4511.robot.subsystems.Lazer;
-import org.usfirst.frc.team4511.robot.subsystems.WebPageBlocked;
-import org.usfirst.frc.team4511.robot.subsystems.Sonar;
-
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
@@ -32,12 +22,13 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 public class Robot extends IterativeRobot {
 
 	//public static final Sonar sonic = new Sonar();
-	public static final BallKicker kickie = new BallKicker();
 	public static OI oi;
-	public static final WebPageBlocked blockie = new WebPageBlocked();
 	public static final DriveTrain drivie = new DriveTrain();
-	public static final Gyroscope gyro = new Gyroscope();
-	public static final Lazer lazie = new Lazer();
+	//public static final Gyroscope gyro = new Gyroscope();
+	public static final Lazer leftEye = new Lazer(0);
+	public static final Lazer rightEye = new Lazer(1);
+	public static final Lazer middleEye = new Lazer(2);
+
 	
     Command autonomousCommand;
     SendableChooser chooser;

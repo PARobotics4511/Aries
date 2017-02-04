@@ -11,8 +11,12 @@ public class Lazer extends Subsystem {
 
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
-	AnalogInput ai = new AnalogInput(0);
+	AnalogInput ai;
 	int bits;
+	
+	public Lazer(int port){
+		ai = new AnalogInput(port);
+	}
 	
 	public double getVoltage(){
 		ai.setOversampleBits(4);

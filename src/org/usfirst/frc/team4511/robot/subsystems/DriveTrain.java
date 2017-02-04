@@ -1,13 +1,12 @@
 package org.usfirst.frc.team4511.robot.subsystems;
 
-import org.usfirst.frc.team4511.robot.RobotMap;
-
 import edu.wpi.first.wpilibj.ADXRS450_Gyro;
 import edu.wpi.first.wpilibj.Talon;
 import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
-import org.usfirst.frc.team4511.robot.commands.*;
+import org.usfirst.frc.team4511.robot.RobotMap;
+import org.usfirst.frc.team4511.robot.commands.Drive;
 /**
  *
  */
