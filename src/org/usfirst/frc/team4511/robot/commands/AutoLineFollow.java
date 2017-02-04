@@ -11,12 +11,12 @@ public class AutoLineFollow extends Command {
 
 	public static double THRESHOLD = 2;
 	public static double LINE_VAL = 1;
-	public long durration, start = System.currentTimeMillis();
-    public AutoLineFollow(long durration) {
+	public long duration, start = System.currentTimeMillis();
+    public AutoLineFollow(long duration) {
     	requires(Robot.leftEye);
     	requires(Robot.rightEye);
     	requires(Robot.drivie);
-    	this.durration = durration;
+    	this.duration = duration;
     }
 
     // Called just before this Command runs the first time
@@ -38,7 +38,7 @@ public class AutoLineFollow extends Command {
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return start - System.currentTimeMillis() > durration;
+        return start - System.currentTimeMillis() > duration;
     }
 
     // Called once after isFinished returns true
